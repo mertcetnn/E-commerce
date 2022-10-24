@@ -147,7 +147,7 @@ router.delete("/:id", (req, res) => {
       id: req.params.id,
     },
   })
-    .then((product) => {
+    .then((productRemoved) => {
       res.json({ message: "No post found with this id" });
     })
     .catch((err) => {
