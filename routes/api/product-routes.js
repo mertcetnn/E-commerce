@@ -148,7 +148,7 @@ router.delete("/:id", async (req, res) => {
     },
   })
     .then((productRemoved) => {
-      res.json({ message: "No post found with this id" });
+      res.json({ message: "product deleted" });
     })
     .catch((err) => {
       res.json(err);
